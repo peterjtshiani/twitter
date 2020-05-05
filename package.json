@@ -1,0 +1,29 @@
+{
+  "name": "tweets",
+  "version": "1.0.0",
+  "description": "creating app that tweet information from the mysql database",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm start\" \"npm run twitter-pj\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterjtshiani/twitter.git"
+  },
+  "author": "Peter Job Tshiani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterjtshiani/twitter/issues"
+  },
+  "homepage": "https://github.com/peterjtshiani/twitter#readme",
+  "dependencies": {
+    "@types/node": "^13.13.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
+  }
+}
